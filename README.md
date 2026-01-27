@@ -48,47 +48,76 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         │   ├── Fen-B
              ......   
         ├── Code/                
-        │   ├──              
-        │   ├── 9 combinations  
-        │   ├── Fen-A   
-        │   ├── Fen-B
+        │   ├── data_provider             
+        │   ├── exp  
+        │   ├── layers   
+        │   ├── models
+        │   ├── pip             
+        │   ├── scripts 
+        │   ├── utils   
+        │   ├── Pesticide_TEST.ts
+        │   ├── Pesticide_TRAIN.ts
+        │   ├── ROC.py
+        │   ├── requirements.txt   
+        │   ├── run.py
         └── README.md                   # This file
 
 #### 3.1 Data Preprocessing
 
-    cd src/data_preprocessing
+    cd ClassificationAlgorithm/Data
     python preprocess_dpv.py \
         --raw_dir ../../data/raw/ \
         --output_dir ../../data/processed/ \
         --crop_range 0.4 0.9 \
         --normalize_method standard
-Note: Skip this step if using provided preprocessed .npy files.
 
 #### 3.2 Model Training
 
-    cd src/model
-    python train.py --config ../../configs/pyramidal_attention_config.json
-    Configuration (configs/pyramidal_attention_config.json):
+    cd ClassificationAlgorithm/Code/scripts
+    python train.py --config classification\Pyraformer.sh
+    Configuration (configs/classification\Pyraformer.sh):
 
         json
     {
-        "num_scales": 4,
-        "num_attention_layers": 4,
-        "hidden_dim": 128,
-        "learning_rate": 0.001,
-        "batch_size": 16,
-        "epochs": 1000,
-        "early_stop_patience": 50
+        python -u run.py \
+          --task_name classification \
+          --is_training 1 \
+          --root_path ./dataset/EthanolConcentration/ \
+          --model_id EthanolConcentration \
+          --model $model_name \
+          --data UEA \
+          --e_layers 3 \
+          --batch_size 4 \
+          --d_model 128 \
+          --d_ff 256 \
+          --top_k 3 \
+          --des 'Exp' \
+          --itr 1 \
+          --learning_rate 0.001 \
+          --train_epochs 100 \
+          --patience 10
     }
 
 #### 3.3 Model Evaluation
 
-    python test.py \
-        --config ../../configs/pyramidal_attention_config.json \
-        --checkpoint ../../checkpoints/best_model.pth
+    python Pesticide_Test.ts \
+        @problemName Pesticide
+        @timeStamps false
+        @missing false
+        @univariate false
+        @dimensions 3
+        @equalLength true
+        @seriesLength 0                    # Number of types
+        @classLabel true     
+        @data                              # data from Pesticides
 
-    python evaluate.py \
-        --results_dir ../../results/ \
-        --plot_roc True \
-        --plot_confusion True \
-        --analyze_mrl True
+    python Pesticide_Train.ts \
+        @problemName Pesticide
+        @timeStamps false
+        @missing false
+        @univariate false
+        @dimensions 3
+        @equalLength true
+        @seriesLength 0                    # Number of types
+        @classLabel true     
+        @data                              # data from Pesticides
