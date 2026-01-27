@@ -40,25 +40,18 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         --output_format json
 #### Project Structure
         
-        Hornbill-plus/
-        ├── data/
-        │   ├── processed/              # Preprocessed numpy arrays
-        │   │   ├── train.npy
-        │   │   ├── train_labels.npy
-        │   │   ├── test.npy
-        │   │   └── test_labels.npy
-        │   └── raw/                    # Raw CSV files
-        │       ├── pesticide_A/
-        │       └── pesticide_B/
-        ├── checkpoints/                # Model weights
-        ├── configs/                    # Configuration files
-        ├── results/                    # Evaluation outputs
-        ├── src/
-        │   ├── data_preprocessing/     # Data processing scripts
-        │   ├── model/                  # Core model code
-        │   ├── analysis/               # Visualization tools
-        │   └── experiments/            # Experimental scripts
-        ├── environment.yaml            # Conda environment
+        Hornbill-plus/ClassificationAlgorithm
+        ├── Data/
+        │   ├── 3 mixing ratios             
+        │   ├── 9 combinations  
+        │   ├── Fen-A   
+        │   ├── Fen-B
+             ......   
+        ├── Code/                
+        │   ├──              
+        │   ├── 9 combinations  
+        │   ├── Fen-A   
+        │   ├── Fen-B
         └── README.md                   # This file
 
 #### 3.1 Data Preprocessing
