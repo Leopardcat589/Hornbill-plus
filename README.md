@@ -107,8 +107,8 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         @univariate false
         @dimensions 3
         @equalLength true
-        @seriesLength 0                    # Number of types
-        @classLabel true     
+        @seriesLength 630                    # Number of types
+        @classLabel true  Ace7 Ace9 Ace11 Ace13 Ace15 Ani7 Ani9 Ani11 Ani13 Ani15 Chl7 Chl9 Chl11 Chl13 Chl15 Dim7 Dim9 Dim11 Dim13 Dim15 Gly7 Gly9 Gly11 Gly13 Gly15 Ipr7 Ipr9 Ipr11 Ipr13 Ipr15 Met7 Met9 Met11 Met13 Met15 Pro7 Pro9 Pro11 Pro13 Pro15 Tri7 Tri9 Tri11 Tri13 Tri15 Bro7 Bro9 Bro11 Bro13 Bro15 Pho7 Pho9 Pho11 Pho13 Pho15 Fen7 Fen9 Fen11 Fen13 Fen15 Pri7 Pri9 Pri11 Pri13 Pri15 Thi7 Thi9 Thi11 Thi13 Thi15 Prop7 Prop9 Prop11 Prop13 Prop15 Thio7 Thio9 Thio11 Thio13 Thio15 Tsum7 Tsum9 Tsum11 Tsum13 Tsum15 Phos7 Phos9 Phos11 Phos13 Phos15   
         @data                              # data from Pesticides
 
     python Pesticide_Train.ts \
@@ -118,6 +118,6 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         @univariate false
         @dimensions 3
         @equalLength true
-        @seriesLength 0                    # Number of types
-        @classLabel true     
+        @seriesLength 90                    # Number of types
+        @classLabel true  Ace7 Ace9 Ace11 Ace13 Ace15 Ani7 Ani9 Ani11 Ani13 Ani15 Chl7 Chl9 Chl11 Chl13 Chl15 Dim7 Dim9 Dim11 Dim13 Dim15 Gly7 Gly9 Gly11 Gly13 Gly15 Ipr7 Ipr9 Ipr11 Ipr13 Ipr15 Met7 Met9 Met11 Met13 Met15 Pro7 Pro9 Pro11 Pro13 Pro15 Tri7 Tri9 Tri11 Tri13 Tri15 Bro7 Bro9 Bro11 Bro13 Bro15 Pho7 Pho9 Pho11 Pho13 Pho15 Fen7 Fen9 Fen11 Fen13 Fen15 Pri7 Pri9 Pri11 Pri13 Pri15 Thi7 Thi9 Thi11 Thi13 Thi15 Prop7 Prop9 Prop11 Prop13 Prop15 Thio7 Thio9 Thio11 Thio13 Thio15 Tsum7 Tsum9 Tsum11 Tsum13 Tsum15 Phos7 Phos9 Phos11 Phos13 Phos15    
         @data                              # data from Pesticides
