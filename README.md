@@ -123,6 +123,7 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         @data                              # data from Pesticides
         
 ### 4. The performance differences between individual sensors and the impact of varying environmental conditions on experimental repeatability.
+The experimental results and corresponding figures for this section are available in the `results/` directory of this repository.
 
 #### 4.1 The performance differences between individual sensors
 To evaluate the consistency of our Hornbill+ tags across different sensor units, we refer to the durability experiment conducted in our prior work (Hornbill, MobiCom '24). Figure 19 in that study shows the retention of Faraday peak currents for 30 independent screen-printed electrodes over 15 days at room temperature (15–25 °C). All electrodes were fabricated using the same process and measured under identical conditions (10 µL of 10⁻¹⁵ mol/L glyphosate).
@@ -130,3 +131,7 @@ To evaluate the consistency of our Hornbill+ tags across different sensor units,
 As illustrated in the figure, the ZIF‑8/chitosan protected sensors retain more than 93.3% of their initial response after 15 days, with a standard deviation of only ±2.1% across the 30 electrodes. 
 
      
+#### 4.2 Impact of varying environmental conditions on experimental repeatability
+To assess the robustness of Hornbill+ under real‑world environmental fluctuations, we conducted pesticide detection experiments in three distinct outdoor scenarios: a kitchen (24 °C, 30% humidity), a lakeside (20 °C, 44% humidity), and a lawn (19 °C, 48% humidity). The system consistently exhibits clear redox peaks around 0.6 V across all environments, with only minor deviations in absolute current values (variation < 5%). This confirms that typical temperature and humidity changes have a negligible effect on the electrochemical signal.
+
+In addition, we evaluated the repeatability across six different smartphone models (P1–P6) serving as NFC readers. The electrochemical responses recorded by these devices show high consistency, with pairwise Pearson similarity coefficients exceeding 0.96. Under both non‑dim and dim conditions across the three environments, all similarity values remain above 0.96, indicating excellent inter‑device consistency.
