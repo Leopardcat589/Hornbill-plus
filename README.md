@@ -125,9 +125,8 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
 ### 4. The performance differences between individual sensors and the impact of varying environmental conditions on experimental repeatability.
 
 #### 4.1 The performance differences between individual sensors
+To evaluate the consistency of our Hornbill+ tags across different sensor units, we refer to the durability experiment conducted in our prior work (Hornbill, MobiCom '24). Figure 19 in that study shows the retention of Faraday peak currents for 30 independent screen-printed electrodes over 15 days at room temperature (15–25 °C). All electrodes were fabricated using the same process and measured under identical conditions (10 µL of 10⁻¹⁵ mol/L glyphosate).
 
-    To evaluate the consistency of our Hornbill+ tags across different sensor units, we refer to the durability experiment conducted in our prior work (Hornbill, MobiCom '24). Figure 19 in that study shows the retention of Faraday peak currents for 30 independent screen-printed electrodes over 15 days at room temperature (15–25 °C). All electrodes were fabricated using the same process and measured under identical conditions (10 µL of 10⁻¹⁵ mol/L glyphosate).
-
-     As illustrated in the figure, the ZIF‑8/chitosan protected sensors retain more than **93.3%** of their initial response after 15 days, with a standard deviation of only **±2.1%** across the 30 electrodes. 
+As illustrated in the figure, the ZIF‑8/chitosan protected sensors retain more than 93.3% of their initial response after 15 days, with a standard deviation of only ±2.1% across the 30 electrodes. 
 
      
