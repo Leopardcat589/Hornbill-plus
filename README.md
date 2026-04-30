@@ -121,3 +121,13 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         @seriesLength 90                    # Number of types
         @classLabel true  Ace7 Ace9 Ace11 Ace13 Ace15 Ani7 Ani9 Ani11 Ani13 Ani15 Chl7 Chl9 Chl11 Chl13 Chl15 Dim7 Dim9 Dim11 Dim13 Dim15 Gly7 Gly9 Gly11 Gly13 Gly15 Ipr7 Ipr9 Ipr11 Ipr13 Ipr15 Met7 Met9 Met11 Met13 Met15 Pro7 Pro9 Pro11 Pro13 Pro15 Tri7 Tri9 Tri11 Tri13 Tri15 Bro7 Bro9 Bro11 Bro13 Bro15 Pho7 Pho9 Pho11 Pho13 Pho15 Fen7 Fen9 Fen11 Fen13 Fen15 Pri7 Pri9 Pri11 Pri13 Pri15 Thi7 Thi9 Thi11 Thi13 Thi15 Prop7 Prop9 Prop11 Prop13 Prop15 Thio7 Thio9 Thio11 Thio13 Thio15 Tsum7 Tsum9 Tsum11 Tsum13 Tsum15 Phos7 Phos9 Phos11 Phos13 Phos15    
         @data                              # data from Pesticides
+        
+### 4. The performance differences between individual sensors and the impact of varying environmental conditions on experimental repeatability.
+
+#### 4.1 The performance differences between individual sensors
+
+    To evaluate the consistency of our Hornbill+ tags across different sensor units, we refer to the durability experiment conducted in our prior work (Hornbill, MobiCom '24). Figure 19 in that study shows the retention of Faraday peak currents for 30 independent screen-printed electrodes over 15 days at room temperature (15–25 °C). All electrodes were fabricated using the same process and measured under identical conditions (10 µL of 10⁻¹⁵ mol/L glyphosate).
+
+     As illustrated in the figure, the ZIF‑8/chitosan protected sensors retain more than **93.3%** of their initial response after 15 days, with a standard deviation of only **±2.1%** across the 30 electrodes. 
+
+     
