@@ -123,7 +123,7 @@ The dataset contains DPV signals for 18 pesticides across 5 concentration gradie
         @data                              # data from Pesticides
         
 ### 4. The performance differences between individual sensors and the impact of varying environmental conditions on experimental repeatability.
-The experimental results and corresponding figures for this section are available in the `results/` directory of this repository.
+The experimental results and corresponding figures for this section are available in the `data/` directory of this repository.
 
 #### 4.1 The performance differences between individual sensors
 To evaluate the consistency of our Hornbill+ tags across different sensor units, we refer to the durability experiment conducted in our prior work (Hornbill, MobiCom '24). Figure 19 in that study shows the retention of Faraday peak currents for 30 independent screen-printed electrodes over 15 days at room temperature (15–25 °C). All electrodes were fabricated using the same process and measured under identical conditions (10 µL of 10⁻¹⁵ mol/L glyphosate).
